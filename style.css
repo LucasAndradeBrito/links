@@ -12,6 +12,10 @@ body {
   background-color: black;
 }
 
+.none {
+  display: none;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -242,6 +246,9 @@ button:hover {
 
 .middle_week_selected,
 .final_week_selected {
+  display: none;
+  justify-content: center;
+  align-items: center;
   padding: 15px 0 0 0;
   width: 700px;
   font-size: 1rem;
