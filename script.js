@@ -24,36 +24,36 @@ function select_option(id) {
       middle_screen.innerHTML = `
           <div class="msg_link flex">
             <p id='msg_link_middle_week' class="fadeIn">
-                *A Congregação Pituaçu está Convidando Você e sua Família para uma Reunião _Zoom_ Agendada.*</br></br>
+*A Congregação Pituaçu está Convidando Você e sua Família para uma Reunião _Zoom_ Agendada.*</br></br>
 
-                _Tópico_: *Reunião Vida e Ministério*</br>
-                _Dia_: *Terça-feira às 19:30 horas*</br></br>
+_Tópico_: *Reunião Vida e Ministério*</br>
+_Dia_: *Terça-feira às 19:30 horas*</br></br>
 
-                *Para Conectar-se Utilizando o Aplicativo _Zoom_ Clique no Link Abaixo:*</br></br>
+*Para Conectar-se Utilizando o Aplicativo _Zoom_ Clique no Link Abaixo:*</br></br>
 
-                <a href='https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09'>https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09</a></br></br>
+<a href='https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09'>https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09</a></br></br>
 
-                *Ou Inicie o Aplicativo _Zoom_ e Insira as Informações Abaixo:*</br></br>
+*Ou Inicie o Aplicativo _Zoom_ e Insira as Informações Abaixo:*</br></br>
 
-                _ID da reunião_: *896 3024 5731*</br>
-                _Senha de acesso_: *200320*</br></br>
+_ID da reunião_: *896 3024 5731*</br>
+_Senha de acesso_: *200320*</br></br>
 
-                *Você Também Poderá Ouvir a Reunião Discando pelo seu Telefone Fixo ou Móvel para Alguns dos Números Abaixo e Depois Digitando as Informações Solicitadas:*</br></br>
+*Você Também Poderá Ouvir a Reunião Discando pelo seu Telefone Fixo ou Móvel para Alguns dos Números Abaixo e Depois Digitando as Informações Solicitadas:*</br></br>
 
-                (11) 4632 2237 Brasil</br>
-                (11) 4680 6788 Brasil</br>
-                (11) 4700 9668 Brasil</br>
-                (21) 3958 7888 Brasil</br>
-                (11) 4632 2236 Brasil</br></br>
+(11) 4632 2237 Brasil</br>
+(11) 4680 6788 Brasil</br>
+(11) 4700 9668 Brasil</br>
+(21) 3958 7888 Brasil</br>
+(11) 4632 2236 Brasil</br></br>
 
-                *OBS:* O Link deste Convite é Recorrente para Todas as Reuniões, Ou Seja, com Ele Poderá Ingressar nas Reuniões de Meio e Final de Semana.
-            </p>
-            <div class='btn flex'>
-              <button class='btn_menu' onclick='copy("msg_link_middle_week")'>Copiar</button>
-              <button class='btn_menu' onclick='menu()' style="margin-left: 10px;">Menu</button>
-            </div>
-          </div>
-            `;
+*OBS:* O Link deste Convite é Recorrente para Todas as Reuniões, Ou Seja, com Ele Poderá Ingressar nas Reuniões de Meio e Final de Semana.
+</p>
+<div class='btn flex'>
+<button class='btn_menu' onclick='copy("msg_link_middle_week")'>Copiar</button>
+<button class='btn_menu' onclick='menu()' style="margin-left: 10px;">Menu</button>
+</div>
+</div>
+`;
     }, 300);
   } else {
     this.classList.add("selected_option");
@@ -136,37 +136,37 @@ function generate_link() {
   final_screen.innerHTML = `
   <div class="msg_link flex">
     <p id="msg_link_final_week" class="fadeIn">
-      *A Congregação Pituaçu está Convidando Você e sua Família para uma Reunião _Zoom_ Agendada.*</br></br>
+*A Congregação Pituaçu está Convidando Você e sua Família para uma Reunião _Zoom_ Agendada.*</br></br>
 
-      _Tópico_: *Discurso Público e Estudo A Sentinela*</br>
-      _Dia_: *Sábado às 19:00 horas*</br>
-      _Tema do discurso_: *${titleCase(input_discurso)}*</br>
-      _Orador_: *${titleCase(input_orador)}*</br>
-      _Congregação_: *${titleCase(input_congregação)}*</br></br>
+_Tópico_: *Discurso Público e Estudo A Sentinela*</br>
+_Dia_: *Sábado às 19:00 horas*</br>
+_Tema do discurso_: *${titleCase(input_discurso)}*</br>
+_Orador_: *${titleCase(input_orador)}*</br>
+_Congregação_: *${titleCase(input_congregação)}*</br></br>
       
-      *Para Conectar-se Utilizando o Aplicativo _Zoom_ Clique no Link Abaixo:*</br></br>
+*Para Conectar-se Utilizando o Aplicativo _Zoom_ Clique no Link Abaixo:*</br></br>
       
-      <a href='https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09'>https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09</a></br></br>
+<a href='https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09'>https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09</a></br></br>
       
-      *Ou Inicie o Aplicativo _Zoom_ e Insira as Informações Abaixo:*</br></br>
+*Ou Inicie o Aplicativo _Zoom_ e Insira as Informações Abaixo:*</br></br>
       
-      _ID da reunião_: *896 3024 5731*</br>
-      _Senha de acesso_: *200320*</br></br>
+_ID da reunião_: *896 3024 5731*</br>
+_Senha de acesso_: *200320*</br></br>
       
-      *Você Também Poderá Ouvir a Reunião Discando pelo seu Telefone Fixo ou Móvel para Alguns dos Números Abaixo e Depois Digitando as Informações Solicitadas:*</br></br>
+*Você Também Poderá Ouvir a Reunião Discando pelo seu Telefone Fixo ou Móvel para Alguns dos Números Abaixo e Depois Digitando as Informações Solicitadas:*</br></br>
       
-      (11) 4632 2237 Brasil</br>
-      (11) 4680 6788 Brasil</br>
-      (11) 4700 9668 Brasil</br>
-      (21) 3958 7888 Brasil</br>
-      (11) 4632 2236 Brasil</br></br>
+(11) 4632 2237 Brasil</br>
+(11) 4680 6788 Brasil</br>
+(11) 4700 9668 Brasil</br>
+(21) 3958 7888 Brasil</br>
+(11) 4632 2236 Brasil</br></br>
       
-      *OBS:* O Link deste Convite é Recorrente para Todas as Reuniões, Ou Seja, com Ele Poderá Ingressar nas Reuniões de Meio e Final de Semana.
-    </p>
-    <div class='btn flex'>
-      <button class='btn_menu' onclick='copy("msg_link_final_week")'>Copiar</button>
-      <button class='btn_menu' onclick='menu()' style="margin-left: 10px;">Menu</button>
-    </div>
-  </div>
- `;
+*OBS:* O Link deste Convite é Recorrente para Todas as Reuniões, Ou Seja, com Ele Poderá Ingressar nas Reuniões de Meio e Final de Semana.
+</p>
+<div class='btn flex'>
+<button class='btn_menu' onclick='copy("msg_link_final_week")'>Copiar</button>
+<button class='btn_menu' onclick='menu()' style="margin-left: 10px;">Menu</button>
+</div>
+</div>
+`;
 }
