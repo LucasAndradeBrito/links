@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 15px auto;
+  font-weight: 700;
+}
+
+a,
+a:active {
+  color: blue;
+  transition: all, 0.3s;
+}
+
+a:hover {
+  color: blueviolet;
+}
