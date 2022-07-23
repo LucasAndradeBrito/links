@@ -3,14 +3,24 @@ let options_week = document.querySelector(".options_week");
 let middle_week = document.querySelector("#middle_week");
 let final_week = document.querySelector("#final_week");
 let return_option = document.querySelector(".return_option");
+let middle_screen = return_option.children[0];
+let final_screen = return_option.children[1];
 
+window.addEventListener("load", begin);
 middle_week.addEventListener("click", select_option);
 final_week.addEventListener("click", select_option);
 
+function begin() {
+  middle_screen.style.display = "none";
+  final_screen.style.display = "none";
+  options_week.style.display = "flex";
+  options_week.classList.add("fadeIn");
+  middle_week.classList.remove("selected_option");
+  final_week.classList.remove("selected_option");
+}
+
 function select_option(id) {
   identifier = id.target.id;
-  middle_screen = return_option.children[0];
-  final_screen = return_option.children[1];
 
   if (identifier == "middle_week") {
     this.classList.add("selected_option");
@@ -104,18 +114,11 @@ function select_option(id) {
 }
 
 function titleCase(text) {
-  console.log(text);
-
   text = text.toLowerCase().split(" ");
-
-  console.log(text);
-
   for (let i = 0; i < text.length; i++) {
     text[i] = text[i][0].toUpperCase() + text[i].substr(1);
   }
-
   final_text = text.join(" ");
-
   return final_text;
 }
 

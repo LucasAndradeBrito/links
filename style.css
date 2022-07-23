@@ -199,7 +199,6 @@ button:hover {
 /* Caracterização por Class e Id */
 
 .box_selection {
-  align-items: flex-start;
   padding: 5px 25px 25px 25px;
   background-color: #5a337e;
   border-radius: 20px;
@@ -241,7 +240,8 @@ button:hover {
   color: #ffffff;
 }
 
-.middle_week_selected {
+.middle_week_selected,
+.final_week_selected {
   padding: 15px 0 0 0;
   width: 700px;
   font-size: 1rem;
