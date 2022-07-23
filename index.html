@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Link de Meio de Semana</title>
+    <title>Links para as Reuniões</title>
     <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,43 +14,24 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="container">
-      <a href=""></a>
-      <h1>Link de Meio de Semana</h1>
-      <p>
-        *A Congregação Pituaçu está Convidando Você e sua Família para uma
-        Reunião _Zoom_ Agendada*<br /><br />
-
-        _Tópico_: *Reunião Vida e Ministério*<br />
-        _Dia_: *Terça-feira às 19:30 horas*<br /><br />
-
-        *Para Conectar-se Utilizando o Aplicativo _Zoom_ Clique no Link
-        Abaixo:*<br /><br />
-
-        <a
-          href="https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09"
-          >https://jworg.zoom.us/j/89630245731?pwd=Z1B6WkMvM1pOdE5FL0tCK0FJbEhwdz09</a
-        ><br /><br />
-
-        *Ou Inicie o Aplicativo _Zoom_ e Insira as Informações Abaixo:*<br /><br />
-
-        _ID da reunião_: *896 3024 5731*<br />
-        _Senha de acesso_: *200320*<br /><br />
-
-        *Você Também Poderá Ouvir a Reunião Discando pelo seu Telefone Fixo ou
-        Móvel para Alguns dos Números Abaixo e Depois Digitando as Informações
-        Solicitadas:*<br /><br />
-
-        (11) 4632 2237 Brasil<br />
-        (11) 4680 6788 Brasil<br />
-        (11) 4700 9668 Brasil<br />
-        (21) 3958 7888 Brasil<br />
-        (11) 4632 2236 Brasil<br /><br />
-
-        *OBS:* O Link deste Convite é Recorrente para Todas as Reuniões, Ou
-        Seja, com Ele Poderá Ingressar nas Reuniões de Meio e Final de Semana.
-      </p>
+  <body class="flex">
+    <div class="container flex">
+      <div class="box_selection">
+        <div class="options_week flex">
+          <div class="title">
+            <h1>Qual link deseja montar?</h1>
+          </div>
+          <div class="week">
+            <label id="middle_week">Meio de semana</label>
+            <label id="final_week">Final de semana</label>
+          </div>
+        </div>
+        <div class="return_option flex">
+          <div class="middle_week_selected flex"></div>
+          <div class="final_week_selected flex"></div>
+        </div>
+      </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

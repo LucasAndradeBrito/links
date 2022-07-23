@@ -1,11 +1,19 @@
+/* Dados Gerais */
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-.container {
-  display: grid;
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.flex {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -17,10 +25,253 @@ h1 {
 
 a,
 a:active {
-  color: blue;
+  color: #2485c6;
   transition: all, 0.3s;
 }
 
 a:hover {
-  color: blueviolet;
+  color: #b861f1;
+}
+
+input:focus {
+  /*Remover a bordar do input quando clicado*/
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+button {
+  cursor: pointer;
+  margin: 20px 0 0 0;
+  padding: 7.5px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 7.5px;
+  font-size: 1rem;
+  color: #5a337e;
+  transition: all, 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #aaaaaa;
+}
+
+/* Efeito Fade In e Fade Out */
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 0.3s;
+  -moz-animation: fadeIn 0.3s;
+  -o-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 0.3s;
+  -moz-animation: fadeOut 0.3s;
+  -o-animation: fadeOut 0.3s;
+  animation: fadeOut 0.3s;
+}
+
+/* Efeito label-float */
+
+.label-float {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.label-float input {
+  border: 0;
+  border-bottom: 2px solid #909090;
+  outline: none;
+  min-width: 180px;
+  font-size: 1rem;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #ffffff;
+}
+
+.label-float:hover {
+  color: white;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1rem;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 1rem;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.label-float + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 1rem;
+  margin-top: 0;
+  color: #909090;
+}
+
+/* Caracterização por Class e Id */
+
+.box_selection {
+  align-items: flex-start;
+  padding: 5px 25px 25px 25px;
+  background-color: #5a337e;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  text-shadow: 2px 10px 10px #505050;
+  color: white;
+}
+
+.box_information {
+  flex-flow: column;
+}
+
+.options_week {
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: none;
+}
+
+#middle_week,
+#final_week {
+  cursor: pointer;
+  padding: 7.5px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  transition: all, 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+}
+
+#middle_week:hover,
+#final_week:hover {
+  background-color: #ffffff25;
+  color: #ffffff;
+}
+
+.selected_option {
+  background-color: #ffffff25;
+  color: #ffffff;
+}
+
+.middle_week_selected {
+  padding: 15px 0 0 0;
+  width: 700px;
+  font-size: 1rem;
+}
+
+.msg_link {
+  flex-flow: column;
+  text-align: justify;
+}
+
+/* Input */
+
+.tema_discurso,
+.orador,
+.congregação {
+  margin: 7.5px 0 0 0;
+  color: #909090;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+#input_discurso,
+#input_orador,
+#input_congregação {
+  padding: 5px 3px 3px 3px;
+  background-color: #ffffff00;
+  color: #ffffff;
+}
+
+#input_congregação {
+  padding-top: 7.5px;
 }
