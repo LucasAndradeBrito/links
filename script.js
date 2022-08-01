@@ -117,6 +117,7 @@ function titleCase(text) {
 function copy(id) {
   link = document.getElementById(id).textContent;
   navigator.clipboard.writeText(link);
+  window.alert("O link foi Copiado!");
 }
 
 function menu() {
